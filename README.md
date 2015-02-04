@@ -2,9 +2,17 @@
 A simple Spreadshhet API client for Ruby which downloads spreadsheets from Google Drive and can push them to S3
 
 ####Notes
-1) Oauth2 credentials (client id, client secret, refresh token) are needed before running the script. If you have not generated refresh token take reference : https://github.com/aagrawl2/Ruby_Hacking/blob/master/generate_refresh_token.rb
+1) Oauth2 credentials (client id, client secret, refresh token) are needed before running the script. 
+2) Steps for creating Oauth credentials are :
+https://confluence.intgdc.com/display/PS/Oauth+2+Authentication+Steps
 
-2) Amazon S3 credentials are required if backing up to S3 else remove that piece of code
+3) Scopes needed for current ruby script are :
+      a) https://spreadsheets.google.com/feeds 
+      b)https://www.googleapis.com/auth/drive.file 
+      c)https://www.googleapis.com/auth/drive.readonly
+If you have not generated refresh token take reference : https://github.com/aagrawl2/Ruby/blob/master/generate_refresh_token.rb
+
+4) Amazon S3 credentials are required if backing up to S3 else remove that piece of code
 
 ####Steps
 1) Initialize S3 bucket
