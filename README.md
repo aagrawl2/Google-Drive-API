@@ -12,7 +12,8 @@ A simple Spreadshhet API client for Ruby which downloads spreadsheets from Googl
 2) Create new Spreadsheet class object 
   
       a) Create Google_Oaut2 class object that generates fresh access token
-
+      b) Automatic Token refreshing is handled as it expires in 3600 sec 
+      
 3) Get a list of folders from Google Drive  
 
 4) Scan through all/custom folders to get list of all files. In I explicitly mentioned "Adwords" folder to get all files related to this folder.
